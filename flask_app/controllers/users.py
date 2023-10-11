@@ -47,6 +47,7 @@ def dashboard():
     }
     return render_template("dashboard.html",user=User.get_by_id(data))
 
+
 @app.route('/logout')
 def logout():
     session.clear()
